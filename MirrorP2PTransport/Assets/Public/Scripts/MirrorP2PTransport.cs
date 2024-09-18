@@ -70,7 +70,7 @@ namespace Mirror.WebRTC
                 InjectionJs(url, id);
             }
 #else
-            Unity.WebRTC.WebRTC.Initialize(Unity.WebRTC.EncoderType.Software);
+            //Unity.WebRTC.WebRTC.Initialize(Unity.WebRTC.EncoderType.Software);
 #endif
             Debug.Log("MirrorP2PTransport initialized!");
         }
@@ -85,7 +85,7 @@ namespace Mirror.WebRTC
         private void OnDestroy()
         {
 #if !UNITY_WEBGL
-            Unity.WebRTC.WebRTC.Dispose();
+            //Unity.WebRTC.WebRTC.Dispose();
 #endif
 
             this.client?.Dispose();

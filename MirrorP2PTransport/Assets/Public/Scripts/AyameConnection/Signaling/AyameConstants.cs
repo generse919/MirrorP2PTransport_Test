@@ -16,6 +16,7 @@ namespace Ayame.Signaling
         public List<IceServer> iceServers;
         public bool isExistClient;
         public bool isExistUser;
+        public bool isInitiator;
 
         public RTCIceServer[] ToRTCIceServers(RTCIceServer[] iceServers)
         {

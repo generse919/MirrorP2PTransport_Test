@@ -103,6 +103,12 @@ namespace Mirror.WebRTC
                 GUILayout.Label("roomId");
                 this.transport.roomId = GUILayout.TextField(this.transport.roomId);
                 GUILayout.EndVertical();
+
+
+                GUILayout.BeginVertical();
+                GUILayout.Label("networkAddress");
+                manager.networkAddress = GUILayout.TextField(manager.networkAddress);
+                GUILayout.EndVertical();
             }
             else
             {

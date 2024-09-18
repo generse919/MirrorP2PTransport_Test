@@ -4,6 +4,7 @@ using System;
 using System.Security.Authentication;
 using System.Text;
 using System.Threading;
+using System.Transactions;
 using Unity.WebRTC;
 using UnityEngine;
 using WebSocketSharp;
@@ -78,6 +79,11 @@ namespace Mirror.WebRTC
             m_signalingThread = default;
 
             Debug.Log("WSStop");
+        }
+
+        public void Dispose()
+        {
+
         }
 
         public event OnAcceptHandler OnAccept;
